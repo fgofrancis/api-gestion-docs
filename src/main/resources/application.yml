@@ -1,0 +1,43 @@
+#spring:
+#  datasource: { url: "jdbc:h2:file:./data/fedcoop;AUTO_SERVER=TRUE", username: sa, password: "" }
+#  jpa: { hibernate: { ddl-auto: update }, open-in-view: false }
+#  h2: { console: { enabled: true }, path: /h2-console }
+#  servlet: { multipart: { max-file-size: 25MB, max-request-size: 25MB } }
+#app:
+#  jwt-secret: cambia-esta-clave-secreta-de-al-menos-32-caracteres!!
+#  storage-dir: ./storage
+
+# Recomendable usar esta forma
+#spring:
+#  datasource:
+#    url: "jdbc:h2:file:./data/fedcoop;AUTO_SERVER=TRUE"
+#    username: sa
+#    password: ""
+#
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    open-in-view: false
+#
+#  h2:
+#    console:
+#      enabled: true
+#      path: /h2-console
+#
+#  servlet:
+#    multipart:
+#      max-file-size: 25MB
+#      max-request-size: 25MB
+#
+#app:
+#  jwt-secret: cambia-esta-clave-secreta-de-al-menos-32-caracteres!!
+#  storage-dir: ./storage
+
+# Enviroment dividido en dev y pro
+spring:
+  application:
+    name: fedcoop
+  jpa:
+    open-in-view: false
+app:
+    storage-dir: ./storage
